@@ -14,6 +14,19 @@ This command creates a file in the folder `app/Facades`. It also creates a new `
 
 After creating the first facade, this FacadeServiceProvider should be added to the `providers` array in `config/app.php`.
 
+If you want to create a facade called 'Facebook', run the following command:
+
+````
+php artisan make:facade Facebook
+````
+
+This command will perform the following tasks:
+- create the file app/Facades/Facebook.php
+- create the file app/Providers/FacadeServiceProvider.php if this file does not exists yet
+- adds an entry to the FacadeServiceProvider for this facade
+
+You still have to add the FacadeServiceProvider to `config/app.php` and check if the facade returns the correct class.
+
 # Installation
 
 Require this package with composer.
