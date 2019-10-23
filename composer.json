@@ -1,0 +1,27 @@
+{
+    "name": "eelcol/laravel-make-facade",
+    "description": "Adds make:facade command to Laravel Artisan",
+    "keywords": ["laravel", "facades", "make", "command"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eelco Luurtsema",
+            "email": "eelcoluurtsema@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eelcol\\LaravelMakeFacade\\": "src/" 
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eelcol\\LaravelMakeFacade\\MakeFacadeServiceProvider"
+            ]
+         }
+     }
+}

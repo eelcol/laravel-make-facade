@@ -1,0 +1,5 @@
+		$this->app->bind('CLASSNAME_CAMELCASE',function(){
+
+		    return new CLASSNAME();
+
+		});
